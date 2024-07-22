@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg";
+import "./App.css";
+import HeadingH1 from "./Heading";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeadingH1 />
+
+      <div className="container">
+        <p style={{ color: "red" }}>List Of Five Best Movie's on Netflix</p>
+        <nav>
+          <li>Damsel</li>
+          <li>The Mother</li>
+          <li>Don't Look Up</li>
+          <li>Red Notice </li>
+          <li>The Adam Project</li>
+        </nav>
+      </div>
+    </>
   );
 }
 
